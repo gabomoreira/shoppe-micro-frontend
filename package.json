@@ -1,0 +1,16 @@
+{
+  "npmClient": "yarn",
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "start": "lerna run --parallel start",
+    "build": "lerna run --parallel build",
+    "serve": "lerna run --parallel serve"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.5.1"
+  }
+}
